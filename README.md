@@ -19,5 +19,9 @@
 In the root directory that scrapy.cfg is located, run the following command.
 
 ```
-    scrapy crawl infos -O info.xlsx
+    scrapy crawl infos -O info.xlsx    
+```
+To save excel file with timeline, run the following command.
+```
+    scrapy crawl infos -O '%(time)s.xlsx'
 ```

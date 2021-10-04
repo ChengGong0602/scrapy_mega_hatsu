@@ -101,3 +101,55 @@ POSTGRES_HOST = 'localhost'
 POSTGRES_PORT = '5432'
 POSTGRES_DB = 'test_db'
 POSTGRES_TABLE = 'articles'
+
+
+FEED_EXPORT_FIELDS = [
+    'property_number',
+    'unit_price_per_unit_of_electricity_sold',
+    'total_capacity_of_power_conditioner',
+    'total_panel_capacity',
+    'Map',
+    'Type',
+    'Yield',
+    'assumed_investement_surface_yield',
+    'carbon_dioxid_emission_reduction',
+    'construction_costs',
+    'consumption_tax',
+    'conversion_efficiency',
+    'conversion_to_cedar_tree',
+    'estimated_annual_power_generation',
+    'estimated_electricity_sales_income',
+    'estimated_electricity_sales_revenue',
+    'fence',
+    'geodetic_point',
+    'guarantee',
+    'identifier',
+    'installation_location',
+    'insurrance_cost',
+    'interconnection_price',
+    'irr_notes',
+    'land_developpement',
+    'land_price_or_rent',
+    'land_registration',
+    'manufacturer',
+    'manufacturer2',
+    'maximum_output',
+    'model',
+    'number_of_lots_sold',
+    'other_costs_and_features',
+    'output_guarantee',
+    'price_notes',
+    'product_warranty',
+    'property_number',
+    'remote_monitoring',
+
+    'sales_price2',
+    'sign',
+    'status',
+    'subtitle',
+    'system_price',
+    'title',
+
+    'url',
+    'weed_prevention_sheet'
+]

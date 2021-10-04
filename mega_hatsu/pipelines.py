@@ -8,7 +8,7 @@
 from itemadapter import ItemAdapter
 import pandas as pd 
 import sqlalchemy
-
+from scrapy.exceptions import DropItem
 
 class MegaHatsuPipeline:
 
@@ -43,6 +43,10 @@ class MegaHatsuPipeline:
 
 
     def process_item(self, item, spider):
+
+        if not (item['property_number'] and item['total_panel_capacity'] and item['Map']): 
+            raise DropItem
+            
         if item['identifier'] in self.ids : 
             item['status'] = 'still available'
             self.ids.remove(item['identifier'])
